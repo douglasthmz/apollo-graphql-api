@@ -1,6 +1,6 @@
 import { GraphQLString, GraphQLList, GraphQLInputObjectType } from 'graphql';
 import CommentType from './CommentType';
-import { getComments, saveComment } from './CommentLoader';
+import { getComments, saveComment, feedComments } from './CommentLoader';
 
 export const queries = {
   comments: {
@@ -28,5 +28,12 @@ export const mutations = {
         }),
       },
     },
+  },
+};
+
+export const subscriptions = {
+  feedComments: {
+    type: CommentType,
+    subscribe: feedComments,
   },
 };
