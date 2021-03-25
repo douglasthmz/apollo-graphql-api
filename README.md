@@ -16,10 +16,6 @@ Após isso, basta iniciar o servidor:
 
 Endereço da aplicação: `http://localhost:4000`
 
-Rodando testes:
-
-`npm run test`
-
 ### Escolhas técnicas
 
 Para o server, foi utilizado o ApolloServer, que abstrai algumas configurações relativas ao graphQL, tornando o desenvolvimento mais rápido e simples.
